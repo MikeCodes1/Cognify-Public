@@ -1,0 +1,90 @@
+.Sets-Flashcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Sets-Flashcards .input-button-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Add spacing between the input and button */
+}
+
+.Sets-Flashcards input {
+    flex: 1; /* Make the input take up remaining space */
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.Sets-Flashcards button {
+    height: 45px;
+    background: rgb(102, 79, 187);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.Sets-Flashcards button:hover {
+    background: rgb(65, 38, 65);
+    color: rgb(0, 0, 0);
+}
+.Set-Title2{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 20px 20px ;
+    text-align: center;
+    font-size: 36px;
+    display: center;
+}
+.Add-Flashcard{
+    display: flex;
+    padding-top: 30px; /* Add padding to the top of add-Flashcard Button */
+}
+.Nav-Button2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-bottom: 60px; /* Add padding to the bottom of the Nav-Button */
+}
+.Nav-Button2 button {
+    display: center;
+    background: rgb(102, 79, 187);
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+}
+.back-button {
+    width: 45px;
+  height: 45px;
+  background: rgb(102, 79, 187);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .Nav-Button2 button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: rgba(102, 79, 187, 0.5);
+  }
+ .display-flashcards{
+    margin-bottom: 20px;
+ }

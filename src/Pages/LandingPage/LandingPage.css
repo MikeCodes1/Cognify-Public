@@ -1,0 +1,21 @@
+/* .Wrapper-LandingPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+} */
+.wrapper-Landing button{
+    width: 100%;
+    height: 45px;
+    background: rgb(102, 79, 187);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+}

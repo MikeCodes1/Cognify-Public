@@ -1,0 +1,101 @@
+/* Styles for the back button */
+.back-button {
+    width: 45px; /* Set the width of the button */
+    height: 45px; /* Set the height of the button */
+    background: rgb(102, 79, 187); /* Set the background color */
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    border-radius: 50%; /* Make the button circular */
+    font-size: 24px; /* Set the font size */
+    color: #000; /* Set the text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-bottom: 20px; /* Add space below the button */
+    margin-top: 10px; /* Add space above the button */
+}
+
+/* Hover effect for the back button */
+.back-button:hover {
+    background: rgb(65, 38, 65); /* Change background color on hover */
+    color: rgb(0, 0, 0); /* Change text color on hover */
+}
+
+/* Styles for the flashcard container */
+.learn-flashcard-container {
+    background: rgba(255, 255, 255, 0.1); /* Set a semi-transparent background */
+    padding: 10px; /* Add padding inside the container */
+    border-radius: 40px; /* Round the corners of the container */
+    text-align: center; /* Center-align text inside the container */
+    min-height: 770px; /* Set a minimum height for the container */
+}
+
+/* Styles for the options container */
+.options-container {
+    display: grid; /* Use grid layout for options */
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 20px; /* Add space between grid items */
+    padding: 20px; /* Add padding inside the container */
+}
+
+/* Styles for each option button */
+.option-button {
+    background: rgb(102, 79, 187); /* Set the background color */
+    border: none; /* Remove the border */
+    border-radius: 10px; /* Round the corners of the button */
+    padding: 15px; /* Add padding inside the button */
+    color: white; /* Set the text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Set the font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 100%; /* Make the button take full width */
+    min-height: 100px; /* Set a minimum height for the button */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center-align text */
+}
+
+/* Hover effect for option buttons, excluding disabled ones */
+.option-button:hover:not(:disabled) {
+    background: rgb(65, 38, 65); /* Change background color on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+/* Styles for correct answer button */
+.option-button.correct {
+    background-color: #4CAF50 !important; /* Set green background for correct answer */
+    color: white; /* Set text color */
+}
+
+/* Styles for incorrect answer button */
+.option-button.incorrect {
+    background-color: #f44336 !important; /* Set red background for incorrect answer */
+    color: white; /* Set text color */
+}
+
+/* Styles for disabled option buttons */
+.option-button:disabled {
+    cursor: default; /* Change cursor to default */
+    opacity: 0.8; /* Reduce opacity */
+}
+
+/* Styles for the flashcard term display */
+.flashcard-term {
+    font-size: 24px; /* Set the font size */
+    margin: 20px auto; /* Center the term with margin */
+    padding: 30px; /* Add padding inside the term box */
+    background: rgba(255, 255, 255, 0.1); /* Set a semi-transparent background */
+    border-radius: 10px; /* Round the corners of the term box */
+    max-width: 80%; /* Limit the maximum width */
+    min-height: 150px; /* Set a minimum height */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for the score display */
+.score {
+    margin: 20px 0; /* Add vertical margin */
+    font-size: 20px; /* Set the font size */
+    color: white; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+}
