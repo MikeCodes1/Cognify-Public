@@ -8,7 +8,6 @@ import LastFlashCard from '../../Components/LastFlashCard/LastFlashCard';
 import './ViewFlashcards.css';
 import BackButton from '../../Components/BackButton/BackButton';
 import Loading from '../../Components/Loading/Loading';
-
 const ViewFlashcards = () => {
   const { id } = useParams(); // Get the set ID from the URL
   const [set, setSet] = useState(null);
