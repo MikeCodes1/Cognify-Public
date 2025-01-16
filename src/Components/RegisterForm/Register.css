@@ -1,0 +1,5 @@
+.RegisterButton button:hover {
+    background: rgba(236, 232, 232, 0.829);
+    transition: 0.5s;
+    transform: scale(1.10);
+}

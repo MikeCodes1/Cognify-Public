@@ -1,0 +1,157 @@
+.CreateSets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.CreateSets button{
+    width: 100%;
+    height: 45px;
+    background: rgb(102, 79, 187);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.CreateSets button:hover{
+    background: rgb(65, 38, 65);
+    color: rgb(0, 0, 0);
+}
+.CreateSets input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+
+.SetTitle {
+    text-decoration: dashed;
+    color: #fff;
+    padding: 0px 20px 160px ; /* Last number changes height of delete set */
+    text-align: center;
+    font-size: 36px;
+    display: center;
+}
+
+.SetTitle {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Sets-List {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* 
+.Sets-List button {
+    height: 45px;
+    background: rgb(102, 79, 187);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.Sets-List button:hover {
+    background: rgb(65, 38, 65);
+    color: rgb(0, 0, 0);
+} */
+
+.Sets-List {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 95%;
+    margin: 50px auto;
+    
+}
+
+.Sets-List > div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px; /* Changes the height from the title to the top of the container */
+    border-radius: 10px;
+    text-align: center;
+    min-height: 300px; /* Added minimum height */
+}
+.Sets-List > div:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.delete-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.delete-button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(255, 69, 69);
+    justify-content: center;
+}
+
+.delete-button:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+
+.delete-button::before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the "Delete" text horizontally */
+    content: "Delete";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+    opacity: 0; /* Initially hidden */
+}
+
+.delete-button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translate(-50%, 30px);
+    transition-duration: .3s;
+}
