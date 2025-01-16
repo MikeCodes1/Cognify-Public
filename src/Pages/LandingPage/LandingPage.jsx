@@ -10,7 +10,7 @@ const LandingPage = () => {
             <h1>Cognify</h1>
             <Link to = '/LoginForm'> <button > Login </button> </Link>
             <Link to = '/RegisterForm'> <button> Register </button> </Link>
-            <h2> hello this is updated testing that should show on screen </h2> 
+            <h2> hello this is updated testing that should show on screen. testing </h2> 
         </div>
     </div>
     
